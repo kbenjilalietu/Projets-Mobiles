@@ -1,0 +1,11 @@
+<resources>
+        <string name="app_name">Restorant</string>
+        <string name="register">REGISTER</string>
+        <string name="login_email_hint">Email</string>
+        <string name="login_password_hint">Password</string>
+        <string name="s_inscrire">S\'inscrire</string>
+        <string name="s_inscrire_ligne"><u><b>S\'inscrire</b></u></string>
+        <string name="se_connecter">Se connecter</string>
+        <string name="se_connecter_ligne"><u>Se connecter</u></string>
+        <string name="cr_ez_en_un"><b><u>S\'identifier</u></b></string>
+</resources>

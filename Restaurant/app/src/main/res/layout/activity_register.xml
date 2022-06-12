@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:background="@drawable/signup"
+style="@style/loginParent"
+tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="235dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/noClickedAuth"
+            android:id="@+id/signupText"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:onClick="sidentifier"
+            android:layout_marginEnd="21dp"
+            android:text="@string/se_connecter"
+            tools:ignore="OnClick" />
+
+        <TextView
+            style="@style/clickedAuth"
+            android:layout_marginBottom="10dp"
+            android:text="@string/s_inscrire_ligne" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_marginTop="260dp"
+        android:padding="@dimen/loginViewsMargin">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputName"
+            style="@style/parent"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/nameEdit"
+                style="@style/modifiedEditText"
+                android:background="@drawable/login_text_bk"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEmail"
+            style="@style/parent"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/emailEdit"
+                style="@style/modifiedEditText"
+                android:background="@drawable/login_text_bk"
+                android:hint="@string/login_email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/parent"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/passwordEdit"
+                style="@style/modifiedEditText"
+                android:background="@drawable/login_text_bk"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/singupButton"
+            style="@style/loginButton"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/s_inscrire" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/parent"
+                android:fontFamily="casual"
+                android:gravity="center_horizontal"
+                android:text="Vous avez déjà un compte? "
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signupText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteCardColor"
+                android:fontFamily="casual"
+                android:text="@string/cr_ez_en_un"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/loginTextSize2"
+                 />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
